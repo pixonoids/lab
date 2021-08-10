@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixonoids Mascot</title>
+    
+    <script
+      src="https://kit.fontawesome.com/84588adc24.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" crossorigin src="/assets/mascot.b69abc00.js"></script>
+    <link rel="stylesheet" href="/assets/mascot.0bcff87c.css">
+  </head>
+  <body>
+    <header>
+      <h2>Pixonoids</h2>
+
+      <ul>
+        <li>
+          <a href="https://www.instagram.com/pixonoids/?hl=en" target="blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://github.com/Pranjal7852/webdev4pixo" target="blank"
+            ><i class="fab fa-github"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/company/pixonoids/" target="blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </li>
+      </ul>
+    </header>
+    <div class="main">
+      <div><img class="mascot" src="/assets/Untitled-1.e80f3d83.png" alt="" /></div>
+    </div>
+
+    <div class="confirm">
+      <div class="logo">
+        <img
+          class="rotationDisc"
+          src="/assets/pixonoid.c7a26c16.png"
+          alt="pixonoids-logo-img"
+        />
+      </div>
+
+      <h2>Ready to see New Pixonoids Mascot</h2>
+      <button>Yes</button>
+    </div>
+    <footer>© Pixonoids 2021 | Some rights reserved</footer>
+    <script>
+      document
+        .querySelector(".confirm button")
+        .addEventListener("click", function () {
+          document.querySelector(".confirm img").classList.add("fast");
+          document
+            .querySelector(".confirm img")
+            .classList.remove("rotaionDisc");
+          document.querySelector(".logo").classList.add("zoom");
+          document.querySelector(".confirm").classList.add("fade");
+          document.querySelector("img.mascot").classList.add("appear");
+        });
+    </script>
+  </body>
+</html>
